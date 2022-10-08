@@ -11,12 +11,19 @@ public class Main {
             System.out.println(q);
         }
 // Задача 1.2
-        int a = 1;
-        while (a <= 10) {
-            System.out.println (a + " ");
-            a++;
+        int a = 0;
+        while (a < 10) {
+            System.out.print(++a + " ");
         }
+        System.out.println();
 
+        for (int q = 10; q >0; q--) {
+            System.out.print(q + " ");
+        }
+ // Задача 1.3
 
     }
 }
+
+
+
