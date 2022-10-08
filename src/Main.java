@@ -31,6 +31,26 @@ public class Main {
             populationСountry = populationСountry + populationGrowthYear;
             System.out.println("Год " + a + " численность населения составляет " + populationСountry);
         }
+// Задача 2.1
+
+        int initialContribution = 15000;
+        int finalAmountSavings = 0 + initialContribution ;
+        for ( int z = 1; finalAmountSavings < 12_000_000; z++) {
+            finalAmountSavings = finalAmountSavings + (finalAmountSavings / 100) *7;
+            System.out.println("Месяц " + z + " сумма накоплений равна " + finalAmountSavings);
+        }
+// Задача 2.2
+
+        int initialContribution1 = 15000;
+        int finalAmountSavings1 = 0 + initialContribution1 ;
+        for ( int z = 1; finalAmountSavings1 < 12_000_000; z++) {
+            finalAmountSavings1 = finalAmountSavings1 + (finalAmountSavings1 / 100) *7;
+            if (z % 6 == 0)
+            System.out.println("Месяц " + z + " сумма накоплений равна " + finalAmountSavings1);
+        }
+
+
+
 
 
 
