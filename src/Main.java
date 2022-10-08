@@ -21,6 +21,19 @@ public class Main {
             System.out.print(q + " ");
         }
  // Задача 1.3
+        System.out.println();
+        int populationСountry = 12_000_000;
+        int birthRatePulationYear = (populationСountry / 1000) * 17;
+        int mortalityPopulationYear = (populationСountry / 1000) * 8;
+        int populationGrowthYear = birthRatePulationYear - mortalityPopulationYear;
+
+        for (a = 1; a <=10; a++) {
+            populationСountry = populationСountry + populationGrowthYear;
+            System.out.println("Год " + a + " численность населения составляет " + populationСountry);
+        }
+
+
+
 
 
     }
