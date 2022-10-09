@@ -63,7 +63,13 @@ public class Main {
         for (int i = 2; i <= 31; i = i+7) {
             System.out.println("Сегодня пятница, " + i + " число, пора подготовить отчет!");
         }
+// Задание 3.1
 
+        int yearCometPassage = 1822;
+        for (int e = 0; e < 2122; e = e + 79) {
+            if (e > 1822 && e < 2122)
+            System.out.println(e);
+        }
 
 
 
