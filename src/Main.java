@@ -48,6 +48,23 @@ public class Main {
             if (z % 6 == 0)
             System.out.println("Месяц " + z + " сумма накоплений равна " + finalAmountSavings1);
         }
+// Задача 2.3
+
+        int initialContribution2 = 15000;
+        int finalAmountSavings2 = 0 + initialContribution2 ;
+        for ( int z = 1; finalAmountSavings2 < 12_000_000; z++) {
+            finalAmountSavings2 = finalAmountSavings2 + (finalAmountSavings2 / 100) *7;
+            if (z % 6 == 0 && z <= 108)
+                System.out.println("Месяц " + z + " сумма накоплений равна " + finalAmountSavings2);
+        }
+// Задача 2.4
+
+        int friday = 2;
+        for (int i = 2; i <= 31; i = i+7) {
+            System.out.println("Сегодня пятница, " + i + " число, пора подготовить отчет!");
+        }
+
+
 
 
 
