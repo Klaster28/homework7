@@ -71,6 +71,16 @@ public class Main {
             System.out.println(e);
         }
 
+// Задание 3.2
+
+        int d = 2;
+        for (int i = 1; i <= 10; i++ ) {
+
+                System.out.println (i + " * " + d + " = " + i * d);
+            }
+
+        }
+
 
 
 
@@ -80,7 +90,7 @@ public class Main {
 
 
     }
-}
+
 
 
 
