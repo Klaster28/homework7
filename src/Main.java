@@ -3,12 +3,11 @@ public class Main {
 // Задача 1.1
         int contributionRob = 15000;
         int totAl = 0;
-        for (int q = 0; totAl < 2459000; q++) {
-            totAl = totAl + contributionRob;
-            totAl = totAl + totAl / 100;
+        for (int q = 1; totAl < 2459000; q++) {
+            totAl += contributionRob;
+            totAl += totAl / 100;
             System.out.println("Месяц " + q + " сумма накопления равна " + totAl);
-            System.out.println(totAl);
-            System.out.println(q);
+
         }
 // Задача 1.2
         int a = 0;
@@ -26,9 +25,8 @@ public class Main {
         int birthRatePulationYear = (populationСountry / 1000) * 17;
         int mortalityPopulationYear = (populationСountry / 1000) * 8;
         int populationGrowthYear = birthRatePulationYear - mortalityPopulationYear;
-
         for (a = 1; a <=10; a++) {
-            populationСountry = populationСountry + populationGrowthYear;
+            populationСountry += populationGrowthYear;
             System.out.println("Год " + a + " численность населения составляет " + populationСountry);
         }
 // Задача 2.1
@@ -49,12 +47,12 @@ public class Main {
             System.out.println("Месяц " + z + " сумма накоплений равна " + finalAmountSavings1);
         }
 // Задача 2.3
-
+        System.out.println ("Задача 2.3");
         int initialContribution2 = 15000;
         int finalAmountSavings2 = 0 + initialContribution2 ;
-        for ( int z = 1; finalAmountSavings2 < 12_000_000; z++) {
-            finalAmountSavings2 = finalAmountSavings2 + (finalAmountSavings2 / 100) *7;
-            if (z % 6 == 0 && z <= 108)
+        for ( int z = 1; finalAmountSavings2 < 12_000_000; ++z) {
+            finalAmountSavings2 += (finalAmountSavings2 / 100) *7;
+            if (z % 6 == 0)
                 System.out.println("Месяц " + z + " сумма накоплений равна " + finalAmountSavings2);
         }
 // Задача 2.4
@@ -65,9 +63,10 @@ public class Main {
         }
 // Задание 3.1
 
-        int yearCometPassage = 1822;
-        for (int e = 0; e < 2122; e = e + 79) {
-            if (e > 1822 && e < 2122)
+        int firstYearCalculationComet = 1822;
+        int lastYearCalculationComet = 2122;
+        for (int e = 0; e < lastYearCalculationComet; e = e + 79) {
+            if (e > firstYearCalculationComet && e < lastYearCalculationComet)
             System.out.println(e);
         }
 
